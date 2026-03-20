@@ -1,4 +1,4 @@
-# NoteFlow — Notes App with Search
+# EasyNotes — Notes App with Search
 
 A full-stack note-taking app built with **React + Node.js + MongoDB**.
 
