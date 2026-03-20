@@ -7,7 +7,9 @@ import SearchBar from './components/SearchBar.jsx';
 import './App.css';
 
 export default function App() {
-  const { notes, loading, searchTerm, setSearchTerm, addNote, editNote, removeNote, togglePin } = useNotes();
+  // const { notes, loading, searchTerm, setSearchTerm, addNote, editNote, removeNote, togglePin } = useNotes();
+  const { notes = [], loading, searchTerm, setSearchTerm, addNote, editNote, removeNote, togglePin } = useNotes();
+
   const [modalOpen, setModalOpen] = useState(false);
   const [editingNote, setEditingNote] = useState(null);
 
