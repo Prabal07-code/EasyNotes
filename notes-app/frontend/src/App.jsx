@@ -24,8 +24,11 @@ export default function App() {
     closeModal();
   };
 
-  const pinned = notes.filter((n) => n.pinned);
-  const others = notes.filter((n) => !n.pinned);
+  // const pinned = notes.filter((n) => n.pinned);
+  // const others = notes.filter((n) => !n.pinned);
+  const pinned = (notes || []).filter((n) => n.pinned);
+  const others = (notes || []).filter((n) => !n.pinned);
+
 
   return (
     <div className="app">
